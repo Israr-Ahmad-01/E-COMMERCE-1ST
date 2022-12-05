@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecommerce-Project></title>
+    <!-- bootstrap styles lib -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- bootstrap jquerry JS Lib -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- my stylesheet         -->
+    <link rel="stylesheet" href="index-style.css">
+</head>
+
+<body>
+    <header>
+        <!-- BOOTSTRAP NAVE BAR -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-warning fixed-top ">
+            <a class="navbar-brand" href="#"><img class="logo" src="images/company-logo.png" alt=""><span
+                    class="text-dark font-weight-bold font-italic">Alladin.Co</span> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mr-5">
+                    <li class="nav-item active">
+                        <a class="nav-link text-dark" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="shop.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Blogs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark " href="cart.html">Cart</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </header>
+    <!-- HOME HEADER SECTION -->
+    <section id="home-header">
+        <div class="row home-header-row1 d-flex flex-row justify-content-around ">
+            <div class="col-lg5-5  col-md-5 col-sm-5 d-flex flex-column justify-content-center  ">
+                <h3>Trade-in-offer</h3>
+                <h1>Supper value deals<br><span class="span-color">On all products</span></h1>
+                <h6 class="text-muted">Save more with coupns & up to 70% off!</h6>
+                <button class="btn btn-warning py-0 shop-now-button">Shop Now</button>
+
+            </div>
+            <div class="col-lg5-5 col-md-5 col-sm-6">
+                <img class="home-header-img img-fluid" src="images/home-image.png" alt="">
+            </div>
+        </div>
+
+    </section>
+    <!-- CARDS SECTION -->
+    <section id="cards " class="m-5">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="images/shipping-image.jpg"
+                        style="height: 150px; width: 100%; display: block;">
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="btn-group my-1">
+                            <button type="button" class="btn btn-sm btn-outline-warning "
+                                style="width:auto; height:30px;"><b>Free Shipping</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="images/online-order.jpg"
+                        style="height: 150px; width: auto; display: block;">
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="btn-group my-1">
+                            <button type="button" class="btn btn-sm btn-outline-warning "
+                                style="width:100px; height:30px;"><b>Online Order</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="images/promo-image.jpg"
+                        style="height: 150px; width: 100%; display: block;">
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="btn-group my-1">
+                            <button type="button" class="btn btn-sm btn-outline-warning "
+                                style="width:100px; height:30px;"><b>Promotions</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card mb-4 box-shadow">
+                    <img class="card-img-top" src="images/open-image.jpg"
+                        style="height: 150px; width: 100%; display: block;">
+
+                    <div class="d-flex justify-content-center align-items-center">
+                        <div class="btn-group my-1">
+                            <button type="button" class="btn btn-sm btn-outline-warning "
+                                style="width:100px; height:30px;"><b>24/7 Support</b></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+
+    <!-- FEATURED PRODUCTS -->
+    <section id="featured-products" class="my-5">
+
+        <h1 class="text-center">Featured Products</h1>
+        <p class="text-center text-muted">Summary Collection New Modern Designs</p>
+
+        <!-- ROW -->
+        <div class="row m-5">
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 "onclick="window.location.href='single-product.html';">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        </div>
+
+    </section>
+
+
+    <!-- BANNER SECTION -->
+    <section id="Banner" class="mt-5 ">
+        <div class="banner-image">
+            <img src="images/banner.jpg" alt="" style="width:100vw; height:250px">
+            <div class="banner-content  " style="width:100vw; height:250px">
+                <p class="text-warning"><b>Repair Services</b></p>
+                <h3 class="text-warning">Up to <span class="text-danger">70% Off</span>-All T-Shirts & Accessories</h3>
+                <button class="btn btn-light explore-btn">Explore Now</button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- NEW ARRIVALS -->
+    <section id="new-arrivals" class=" mt-5 pt-5">
+
+        <h1 class="text-center span-color">New Arrivals</h1>
+        <p class="text-center text-muted">Summary Collection New Modern Designs</p>
+
+        <!-- ROW -->
+        <div class="row m-5">
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3 ">
+                <div class="card mb-4 product-1 ">
+                    <img class="card-img-top" src="images/shirt-1.jpg"
+                        style="height: 225px; width: 100%; display: block;">
+
+                    <div class="d-flex flex-column">
+                        <div class="product-content px-2">
+                            <p class="mt-4 text-muted">adidas</p>
+                            <h6 class="mt-4">Cartoon Astronaut T-Shirts</h6>
+                            <div class="stars">
+                                <img src="images/rating-stars.png" alt="" style="width:150px">
+                            </div>
+                            <div class="d-flex justify-content-between  align-items-center">
+                                <h4 class="mt-3">$79</h4>
+                                <a href="#"><img src="images/cart-png.ico" alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+        </div>
+        </div>
+
+    </section>
+
+    <!-- BANNER 2 -->
+    <section id="banner-2" class="px-3">
+        <!-- banner-2 row1 -->
+        <div class="row banner-2-content d-flex justify-content-between px-5">
+
+            <div class=" col-lg-6 banner-1-bg text-white font-weight-bold ">
+
+                <p>Crazy Deals</p>
+                <h3>buy 1 get 1 free</h3>
+                <p class="">The best classic dress is on sale at Alladin</p>
+                <button class="learn-more-btn-1">Learn More</button>
+            </div>
+            <div class=" col-lg-6 banner-2-bg ">
+
+                <p>spring/summer</p>
+                <h3>upcomming season</h3>
+                <p class="">The best classic dress is on sale at Alladin</p>
+                <button class=" collection-btn">Collection</button>
+            </div>
+
+
+
+
+
+
+        </div>
+    </section>
+
+    <section id="sale-banner" class="mt-5 mx-5">
+        <div class="row ">
+            <div class="col-md-3 offset-md-1 col-sm-6">
+                <div class="sale-banner-content pl-3">
+                    <h3 class="text-size-small text-white">SEASON SALE</h3>
+                    <H5 class="text-danger text-size-tiny pl-2">Winter Collection-50% OFF</H5>
+                </div>
+
+            </div>
+
+            <div class="col-md-3 col-sm-6">
+                <div class="sale-banner-content-2 pl-3">
+                    <h3 class="text-size-small text-white">Footwear-Collection</h3>
+                    <H5 class="text-danger text-size-tiny pl-2">Winter Collection-50% OFF</H5>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div class="sale-banner-content-3 pl-3">
+                    <h3 class="text-size-small text-white">T-Shirt Collection</h3>
+                    <H5 class="text-danger text-size-tiny pl-2">Winter Collection-50% OFF</H5>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="newsletter">
+        <div class="newsletter-content d-flex justify-content-between  align-items-center">
+            <div class="newsletter-left-content ml-5">
+                <h3 class="text-white">Sign UP For <span class="text-danger">Newsletter</span></h3>
+                <p class="text-blue">Get E-mail updates about our latest shop and <span class="text-warning">latest
+                        offers</span></p>
+            </div>
+            <div class="newsletter-right-content mr-5">
+                <form action="">
+                    <input type="text" placeholder="Enter  e-mail">
+                    <button class="newsletter-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <div class="row m-5">
+            <div class="col-md-5 mt-4">
+                <a href="#"><img class="footer-logo" src="images/company-logo.png" alt=""><span
+                        class="black text-weight-bold">Alladin.Co</span></a>
+                <p class="mt-4 text-small "><span class=" font-weight-bold ">Address :</span> 562 Wellington
+                    Road.Street 32.San Franciso</p>
+                <p class="mt-1 text-small "><span class=" font-weight-bold">Phone :</span> +01 22222
+                    434/(+91)01 2345 6778</p>
+                <p class="mt-1 text-small "><span class=" font-weight-bold">Hours :</span> 10:00 - 18:00. Mon
+                    - Sat</p>
+                <p class="mt-4 text-small "><span class=" font-weight-bold">Follow Us</span></p>
+                <div class="social-media-links d-flex ">
+                    <a href="" class=""><img src="images/linkdin (1).ico" alt="" style="width:20px"></a>
+                    <a href=""class="mx-1"><img src="images/linkdin (2).ico" alt="" style="width:20px"></a>
+                    <a href=""class="mx-1"><img src="images/linkdin (3).ico" alt="" style="width:20px"></a>
+                    <a href=""class=""><img src="images/linkdin (4).ico" alt="" style="width:20px"></a>
+                </div>
+            </div>
+            <div class="col-md-2 d-flex flex-column">
+                <p class="mt-4"><span class=" font-weight-bold">About</span></p>
+                <a href="" class="text-small">About Us</a>
+                <a href="" class="text-small">Delivery Inoformation</a>
+                <a href="" class="text-small">Privacy Policy</a>
+                <a href="" class="text-small">Terms & Condtions</a>
+                <a href="" class="text-small">Contact Us</a>
+
+            </div>
+            <div class="col-md-2 d-flex flex-column">
+                <p class="mt-4"><span class=" font-weight-bold">My Account</span></p>
+
+                <a href="" class="text-small">Sign In</a>
+                <a href="" class="text-small">View Cart</a>
+                <a href="" class="text-small">My Wishlist</a>
+                <a href="" class="text-small">Track My Order</a>
+                <a href="" class=" text-small ">Help</a>
+
+            </div>
+            <div class="col-md-3 d-flex flex-column">
+                <p class="mt-4"><span class=" font-weight-bold">Install App</span></p>
+                <p class="text-small text-muted">From App Store or Google Play</p>
+                <a href=""><img src="images/appstore.ico" alt="" style="width:50px"><img src="images/googleplay.ico"
+                        alt="" style="width:70px"></a>
+                <p class="text-small inline-block text-muted">Secure Payment Gateways</p>
+                <div class="payment-links">
+                    <a href="" class="mr-2"><img src="images/visa (1).ico" alt="" style="width:50px"></a>
+                    <a href=""><img src="images/visa (2).ico" alt="" style="width:50px"></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
